@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en" style='overflow:hidden'>
+
+<head>
+    <meta charset="utf-8" />
+    <title>Egyptian Temple</title>
+    <link rel="stylesheet" type="text/css" href="Yuqi_ChenProjC.css" >
+
+</head>
+
+<body onload="main()" onresize="resize()" style="margin:0px;padding:0px;width:100%;height:100%;">
+    <canvas id="webgl" width="1000" height="600">
+    Please use a browser that supports "canvas"
+    </canvas>
+
+    <div class = "hintClass">
+    <p class="hintFont"><font color="red">Move around</font>: "up", "down", "left", "right" key. || 
+        <font color="red">Move perspective</font>: "w", "s", "a", "d" key.|| 
+        <font color="red">Move light position</font>: "t", "f", "g", "h" key. || 
+        <font color="red">Turn on/off the lamp</font>: "space" key.|| 
+        <font color="red">Turn on/off the headlight</font>: "enter" key. || 
+        <font color="red">Change the material</font>: "m" key.</p>
+    </div>
+
+    <div class="lsClass">
+    <div>
+        <p class="lsFont">Change lighting(Phong lighting and Blinn-Phong lighting): 
+        <button class="buttons" onclick="changeLighting()">change lighting</button>
+        Change shading(Phong shading and Gouraud shading): 
+        <button class="buttons" onclick="changeShading()">change shading</button></p>
+    </div>
+    <div id="lightMode" style="display:inline"> Blinn-Phong lighting
+    </div>&nbsp;&&nbsp;
+    <div id="shadeMode" style="display:inline"> phong shading
+    </div>
+    </div>
+
+    <div id="stretcher">
+        <p class="buttonFont">light source: lampAmbiR, lampAmbiG, lampAmbiB, lampDiffR, lampDiffG, lampDiffB, lampSpecR, lampSpecG, lampSpecB</p>
+        <p class="buttonFont" style="display:inline">
+            lampAmbiR:<input id="lampAmbiR" size="1" value="1.0" /> lampAmbiG:<input id="lampAmbiG" size="1" value="1.0" /> lampAmbiB:<input id="lampAmbiB" size="1" value="1.0" /> 
+            <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;lampDiffR:<input id="lampDiffR" size="1" value="1.0" /> lampDiffG:<input id="lampDiffG" size="1" value="1.0" /> lampDiffB:<input id="lampDiffB" size="1" value="1.0" /> 
+            <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;lampSpecR:<input id="lampSpecR" size="1" value="1.0" /> lampSpecG:<input id="lampSpecG" size="1" value="1.0" /> lampSpecB:<input id="lampSpecB" size="1" value="1.0" /> </p>
+        &nbsp;
+        <button class="buttons" type="button" id="submit" onclick="onSubmit()">Submit</button>
+    </div>
+
+   <!-- <p>
+        <div id="stretcher">
+            <p>light source: lampAmbiR, lampAmbiG, lampAmbiB, lampDiffR, lampDiffG, lampDiffB, lampSpecR, lampSpecG, lampSpecB</p>
+            <p style="display:inline">lampAmbiR:<input id="lampAmbiR" size="1" value="1.0" /> lampAmbiG:<input id="lampAmbiG" size="1" value="1.0" /> lampAmbiB:<input id="lampAmbiB" size="1" value="1.0" /> lampDiffR:
+                <input id="lampDiffR" size="1" value="1.0" /> lampDiffG:<input id="lampDiffG" size="1" value="1.0" /> lampDiffB:<input id="lampDiffB" size="1" value="1.0" /> lampSpecR:
+                <input id="lampSpecR" size="1" value="1.0" /> lampSpecG:<input id="lampSpecG" size="1" value="1.0" /> lampSpecB:<input id="lampSpecB" size="1" value="1.0" /> </p>
+            &nbsp;
+            <button type="button" id="submit" onclick="onSubmit()">Submit</button>
+        </div>
+    </p>-->
+    <script src="lib/webgl-utils.js"></script>
+    <script src="lib/webgl-debug.js"></script>  
+    <script src="lib/cuon-utils.js"></script>
+    <script src="lib/cuon-matrix-mod.js"></script>
+    <script src="lights-JT.js"></script>
+    <script src="materials_Ayerdi.js"></script>
+    <script src="Yuqi_ChenProjC.js"></script>
+</body>
+
+</html>

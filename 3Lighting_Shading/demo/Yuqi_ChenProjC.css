@@ -1,0 +1,220 @@
+﻿body {
+    font-family:'Comic Sans MS';
+}
+
+h1{
+    color: darkmagenta;
+}
+
+.buttons{
+	height: 25px;
+	width: 130px;
+	margin-left: 5px;
+	margin-right: 5px;
+	margin-top: 0px;
+	margin-bottom: 5px;
+    border-radius:8px;
+    font-size: 15px;
+    font-family:'Comic Sans MS';
+    cursor: pointer;
+    /*float:left;*/
+    border-color:ButtonShadow;
+    color:blueviolet;
+}
+
+.hintClass{
+	width: 1000px;
+	/*float: left;*/
+}
+
+canvas{
+    padding-right:500px;
+    padding-top:15px;
+}
+
+.canvasClass{
+	height:25px;
+	width:1000px;
+}
+
+.instructions{
+	border-style: solid;
+	border-width: 2px;
+	text-align: center;
+	height:40px;
+	width:996px;
+	padding-bottom: 7px;
+	margin-bottom: 7px;
+}
+
+.instructionsStyle{
+	font-size: 100%;
+}
+
+.instructionsFont{
+	text-align: center;
+	margin-bottom: 10px;
+	margin-top: 10px;
+}
+
+.context{
+	height: 900px;
+	width: 900px;
+}
+
+.SwordStyle{
+	float: right;
+	height: 400px;
+	width: 345px;
+}
+
+.swordPart{
+	color: darkmagenta;
+	border-style: solid;
+	border-width: 2px;
+	text-align: center;
+	height:40px;
+	width:340px;
+	padding-bottom: 2px;
+	margin-top: 3px;
+	margin-bottom: 7px;
+}
+
+.whipStyle{
+	float: left;
+	margin-left: 5px;
+	height: 400px;
+	width: 345px;
+}
+
+.whipPart{
+	color: darkmagenta;
+	border-style: solid;
+	border-width: 2px;
+	text-align: center;
+	height:40px;
+	width:340px;
+	padding-bottom: 2px;
+	margin-top: 3px;
+	margin-bottom: 7px;
+	margin-bottom: 15px;
+}
+
+.hintFont{
+	clear: both;
+	font-size: 16px;
+	text-align: left;
+	margin-bottom: 0px;
+	margin-top: 0px;
+	margin-left: 50px;
+	padding-top: 0px;
+}
+
+.buttonFont{
+	clear: both;
+	font-size: 16px;
+	text-align: left;
+	margin-bottom: 0px;
+	margin-top: -10px;
+	margin-left: 50px;
+	padding-top: 0px;
+}
+
+.lsFont{
+	clear: both;
+	font-size: 17px;
+	float: left;
+	text-align: left;
+	margin-bottom: 0px;
+	margin-top: 0px;
+	margin-left: 80px;
+	padding-top: 0px;
+}
+
+.lsClass{
+	margin-top: 5px;
+	height: 30px;
+	width: 2000px;
+}
+
+.box{
+	font-size: 18px;
+	width: 200px;
+	text-align: center;
+	color: darkmagenta;
+	border-style: solid;
+	border-width: 2px;
+	padding: 2px;
+	margin-top: 5px;
+	margin-bottom: 10px;
+}
+
+.boxWhip{
+	font-size: 18px;
+	width: 200px;
+	text-align: center;
+	color: darkmagenta;
+	border-style: solid;
+	border-width: 2px;
+	padding: 2px;
+	margin-top: 20px;
+	margin-bottom: 8px;
+}
+
+.keyboardKey{
+	font-size: 18px;
+	width: 25px;
+	height: 25px;
+	text-align: center;
+	color: darkmagenta;
+	border-style: solid;
+	border-width: 2px;
+	padding: 2px;
+	margin-top: 5px;
+	margin-bottom: 2px;
+}
+
+.keyboardBoxStyle{
+	width: 350px;
+	height: 60px;
+}
+
+.keyboardFont{
+	width: 350px;
+	margin-top: 5px;
+	margin-bottom: 10px;
+}
+
+.MouseStyle{
+	font-size: 18px;
+	width: 120px;
+	height: 25px;
+	text-align: center;
+	color: darkmagenta;
+	border-style: solid;
+	border-width: 2px;
+	padding: 2px;
+	margin-top: 5px;
+	margin-bottom: 2px;
+}
+
+.MouseWhipStyle{
+	font-size: 18px;
+	width: 120px;
+	height: 25px;
+	text-align: center;
+	color: darkmagenta;
+	border-style: solid;
+	border-width: 2px;
+	padding: 2px;
+	margin-top: 5px;
+	margin-bottom: 10px;
+}
+
+#stretcher{
+    padding:15px;
+}
+
+#submit {
+    font-size: 15px;
+}
