@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>The demo of Yuqi Chen's project</title>
+	  <link rel="stylesheet" type="text/css" href="SwordWhip.css" >
+  </head>
+
+  <body onload="main()">
+    <canvas id="webgl" width="700" height="700">
+    Please use a browser that supports "canvas"
+    </canvas>
+	 
+	<div class="canvasClass">  
+	 <h1 class="instructions">Instructions</h1>
+	 <div class="instructionsStyle">
+     <p class="instructionsFont">There are two traditional Chinese weapons here.</p>
+			<p class="instructionsFont">One of them is <font color="red"><b>a big sword</b></font> and the other is <font color="red"><b>a long whip</b></font>.</p>
+     <p class="instructionsFont">They are very powerful, and they have different usages.</p>
+    <p class="instructionsFont">Now, I will show you how to use them.</p>
+		</div>
+
+	</div>
+	  
+	  <div class="context">
+		  <div class="whipStyle">
+				   <h2 class="whipPart">Whip</h2>
+				   <p class="keyboardFont">As you can see, the <font color=red><b>color</b></font> of the whip is changing over time.<br>And the <font color=red><b>shape</b></font> of the whip handle is also changing over time. <br>Besides, there existed more than <font color=red><b>20</b></font> sequential, moving joints in the whip. The sword also includes more than <font color=red><b>2</b></font> joints.</p>
+
+				   <p class="boxWhip"><b>Mouse interaction</b>
+				  </p>
+				  <p class="MouseWhipStyle"><b>Drag</b>
+				  </p>
+				  <p class="keyboardFont"><font color=red><b>Hint:</b></font> When you drag the mouse, the position of the whip will change..</p>
+			  </div>
+
+			  <div class= "SwordStyle">
+					 <h2 class="swordPart">Sword</h2>
+					 <p>
+					  <button type="button" class="buttons" onclick="spinDown()">Speed << </button>
+					  <button type="button" class="buttons"onclick="runStop()">Run/Stop</button>
+					  <button type="button" class="buttons" onclick="spinUp()">Speed >> </button>
+					</p>
+					<p class="hintFont"><font color=red><b>Hint:</b></font> When you click the button "speed", the speed of rotation of the sword will change
+					  </p>
+					  <p class="box"><b>Keyboard interaction</b>
+					  </p>
+					   <p class="keyboardFont"> <font color=red><b>Note:</b></font> Please press the following keys in given order.</p>
+					  <p class="keyboardKey"><b>D</b>
+					  </p>
+					  <p class="keyboardFont">When you press the D key, the sword will open.<br> <font color=red><b>Warn:</b></font> Please make sure that the distance between the sword and the sword is far enough, otherwise the hidden weapon will not be able to shoot.</p>
+					  <p class="keyboardKey"><b>W</b>
+					  </p>
+					  <p class="keyboardFont">When you press the W key, the hidden weapon will be shoot.</p>
+					  <p class="keyboardKey"><b>S</b>
+					  </p>
+					  <p class="keyboardFont">When you press the S key, the hidden weapon will be recovered.<br> <font color=red><b>Warn:</b></font> Please make sure that the the hidden weapon was recovered successfully, otherwise the sword will not be able to recover</p>
+					  <p class="keyboardKey"><b>A</b>
+					  </p>
+					   <p class="keyboardFont">When you press the A key, the sword will be recovered.</p>
+
+					  <p class="box"><b>Mouse interaction</b>
+					  </p>
+					  <p class="MouseStyle"><b>Double click</b>
+					  </p>
+					  <p class="keyboardFont"><font color=red><b>Hint:</b></font> When you double click the mouse, the hilt will move to the position of the mouse.</p>
+		  	</div>
+		  
+	  </div>
+	  
+	  <div>
+			  <br><br><br><br><br><br><br><br><br>
+		  </div>
+	  
+	      <script src="../lib/webgl-utils.js"></script>
+    <script src="../lib/webgl-debug.js"></script>
+    <script src="../lib/cuon-utils.js"></script>
+    <script src="../lib/cuon-matrix-mod.js"></script>
+    <script src="SwordWhip.js"></script>
+  </body>
+</html>
